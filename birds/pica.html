@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小檔案</title>
+    <style>
+        body{
+            background-color: #FFAF60;
+            font-family: 微軟正黑體;
+        }
+        .header{
+            display: flex;
+            justify-content: center;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+        }
+        .option{
+            width: 80px;
+            border-radius: 10%;
+            padding: 20px;
+            background-color: #FFDCB9;
+            border-color: white;
+            border-width: 3px;
+            border-style: solid;
+            margin: 3px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .box{
+            width: 1000px;
+            height: 800px;
+            margin-top: 3px;
+            display: flex;
+            justify-content: center;
+            background-color: #FFDCB9;
+            border-width: 3px;
+            border: solid;
+            border-color: white;
+            border-radius: 5%;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="option" id="opt1">角色簡介</div>
+        <div class="option" id="opt2">軼事</div>
+        <div class="option" id="opt3">經歷</div>
+    </div>
+    <div class="main">
+        <div class="box" id="box">
+            
+        </div>
+    </div>
+    <script>
+        let show1 = '<img src="https://stickershop.line-scdn.net/stickershop/v1/sticker/1852742/android/sticker.png" width="224px" height="224px"><div>Mafumafu（日語：まふまふ，1991年10月18日－），日本男歌手、唱見、創作歌手。血型為AB型，身高178cm，代表色為白色。除個人活動之外，亦同歌手SORARU組成音樂組合「After the Rain」，並擔任其作詞、作曲、編曲。Mafumafu的音域寬廣，可以發出由低音域至與VOCALOID媲美之高音域。Mafumafu之音樂影片於網上被觀看超過11億次。Mafumafu會演奏吉他同鋼琴，亦會獨自歌唱、作詞、作曲、編曲、演奏、混音、母帶處理。他亦爲遊戲、動漫作品及其他音樂家提供樂曲。</div>';
+        let show2 = 'Mafumafu由2010年開始在niconico動畫上活動。他喜歡聼包括電子音樂在內的多種音樂[6]。他用音樂表現難以傳達的心情[7]，亦稱此為音樂的魅力[8]。他亦不斷積纍表達方式、詞匯、比喻與經驗，並用於詞曲的寫作。[9]Mafumafu主要於影片分享網站作爲唱見發布之翻唱及原創音樂作品，亦會製作專輯。他在早期製作過的《夢色訊號》（日語：夢色シグナル）、《剎那色症候群》 （日語：刹那色シンドローム）、《暗色夜間遊行》（日語：闇色ナイトパレード）專輯，現已難以購買。亦用SORARU×Mafumafu之名義發布過兩張專輯[10]。<br>現以niconico動畫、niconico直播為中心活動，與同爲唱見的Soraru、天月、Urata、隔壁的坂田、luz及遊戲實況者Kiyo等人密切交往，有時亦會合作投稿影片。[11]。此外亦參加Live、夏季Comic Market等活動。<br>2014年3月7日，投稿了與唱見SORARU的初次合作翻唱曲《海百合海底譚》（日語：ウミユリ海底譚），4月26日與唱見SORARU合作的專輯《After Rain Quest》（日語：アフターレインクエスト）發售。同年11月25日在Youtube建立個人頻道「Mafumafu Channel」。<br>2015年8月15日以Soraru×Mafumafu的名義發售《Pre-Rhythm Arch》（日語：プレリズムアーチ）[10]，9月11日在Youtube頻道初次投稿，投稿曲為《鏡花水月》。<br>2016年1月8日，Mafumafu宣布與Soraru組成樂隊「After the Rain」，並於4月13日以「After the Rain」為名義發售首張專輯《Kuro Crest Story》（日語：クロクレストストーリー）。此專輯主要由Mafumafu作曲編曲，他稱於作曲時已充分考慮到雙方的音域，作品可以兼顧享受音樂樂趣同發揮雙方長處[8]。該專輯於Oricon公信榜獲得第2名[12]。<br>2017年1月15日到2月5日，Mafumafu首次舉行個人巡迴演唱會[13][14]。4月12日與SORARU發布專輯《解讀不能》，《逆時針》（日語：アンチクロックワイズ）兩張專輯。5月7日，他主辦「家裏蹲也要辦Fes」，同SORARU、天月、浦島坂田船、Luz、un:c、araki、nqrse、kradness共同演出[15]。10月18日，他發表以對終點的想像爲主題之專輯《明日色世界終結》（日語：明日色ワールドエンド），該專輯於12月8日被日本唱片協會評爲黃金唱片[16]。<br>2018年，以After the Rain的名義發售同SORARU的合作之專輯《受邀旅人》（日語：イザナワレトラベラー），該專輯在10月10日被日本唱片協會評爲黃金唱片[17]。同年12月4日於中國大陸影片網站bilibili開設官方mafumafu頻道，在新浪微博設立官方帳號。<br>2019年3月13日，Mafumafu參加迪士尼官方翻唱專輯《Connected to Disney》的演出，並擔任專輯的製作[18]。6月22日，在西武巨蛋舉行個人演唱會，有3.5萬人參加[19][20]。7月發布獨自製作之動漫獵獸神兵OP樂曲《犧牲》（日語：サクリファイス）[21]。在8月1日日本電視臺「ZIP!」節目中登場，該節目從多方面介紹了Mafumafu[22]。10月16日以A-Sketch為唱片公司發表專輯《神樂色人造藝品》（日語：神楽色アーティファクト）[23]，專輯收錄20首歌曲，於Oricon公信榜獲得第二名[24]。10月19日，日本NHK電視臺播映Mafumafu同YoutuberHIKAKIN共同出演之特別節目《從家裏蹲到巨蛋 網路時代的先驅者・Mafumafu》。節目詳細介紹Mafumafu之創作經歷，創作理念，世界觀等內容[25]，並於11月18日重播[26]。11月7日，由Mafumafu擔任作詞作曲編曲，After the Rain演唱的歌曲《１・２・３》，作為動畫劇集精靈寶可夢之主題曲，於東京電視台開播[27]。<br>2020年2月16日，被助手發現於自家客廳倒臥昏迷。後乘計程車[28]前往醫院治療，診斷結果為心原性暈厥，休養之後已無大礙[29]。<br>原定於2020年3月25日在東京巨蛋舉行的單人演唱會[30][31]，因應2019冠狀病毒病疫情而中止[32][33]。<br>';
+        let show3 = '有作爲其守護神的晴天娃娃「Mafuteru」。一些畫師亦會用「Mafuteru」的名義擔任PV及插圖之製作[34]。<br>Twitter用戶名稱「uni_mafumafu」中的"uni"來源於海產物海膽的日文。[35] <br>mafumafu喜歡貓，但同SORARU齊去貓咪咖啡廳才知自己對貓過敏[36]。現在養了兩隻貓，貓名分別為iroha（日語：いろは）[37]和potato（日語：ぽてと）[38]。<br>有時會同歌手SORARU、Utara、隔壁的坂田一起玩遊戲，並上傳實況影片。四人合稱為「SORAMAFUURASAKA（日語：そらまふうらさか）」。<br>';
+        let opt1 = document.getElementById("opt1");
+        let opt2 = document.getElementById("opt2");
+        let opt3 = document.getElementById("opt3");
+        let box = document.getElementById("box");
+        let chan1 = function(){
+            change(1);
+        }
+        let chan2 = function(){
+            change(2);
+        }
+        let chan3 = function(){
+            change(3);
+        }
+        opt1.addEventListener("click",chan1);
+        opt2.addEventListener("click",chan2);
+        opt3.addEventListener("click",chan3);
+
+        function change(opt){
+            if(opt == 1){
+                box.innerHTML = show1;
+            }
+            else if(opt == 2){
+                box.innerHTML = show2;
+            }
+            else{
+                box.innerHTML = show3;
+            }
+        }
+        change(1);
+    </script>
+</body>
+</html>
